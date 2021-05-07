@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100sp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/displayScore"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/score_displayed"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_marginTop="20sp">
+
+           <Button
+               android:id="@+id/addScore"
+               android:layout_width="100sp"
+               android:layout_height="80sp"
+               android:layout_marginRight="30dp"
+               android:text="@string/add_score"
+               android:textColor="@color/black"
+               app:backgroundTint="#7AF80B" />
+
+           <Button
+               android:id="@+id/resetScore"
+               android:layout_width="100sp"
+               android:layout_height="80sp"
+               android:text="@string/reset_score"
+               android:textColor="@color/black"
+               app:backgroundTint="#FF0000" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
