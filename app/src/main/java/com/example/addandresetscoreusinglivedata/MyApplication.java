@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
-import androidx.lifecycle.ProcessLifecycleOwner;
 
 public class MyApplication extends Application implements LifecycleObserver {
 
@@ -29,8 +28,6 @@ public class MyApplication extends Application implements LifecycleObserver {
 
         mApplicationInstance = this;
 
-        registerActivityLifecycleCallbacks(new AppLifecycleTracker());
-        ProcessLifecycleOwner.get().getLifecycle().addObserver(this);
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
